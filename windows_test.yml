@@ -1,0 +1,11 @@
+- name: Test Windows
+  hosts: windows
+  gather_facts: no
+
+  tasks:
+    - name: Win ping
+      ansible.windows.win_ping:
+
+    - name: Ejecutar ipconfig
+      ansible.windows.win_command:
+        cmd: ipconfig

@@ -3,13 +3,9 @@
   gather_facts: no
 
   tasks:
-    - name: Win ping
+    - name: linux ping
       ansible.windows.win_ping:
 
     - name: Ejecutar ipconfig
-      ansible.windows.win_command:
-        cmd: ipconfig
-
-    - name: Ejecutar ipconfigaaaaaaa
       ansible.windows.win_command:
         cmd: ipconfig
